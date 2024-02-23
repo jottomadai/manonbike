@@ -3,5 +3,6 @@ body {
 }
 
 .horse {
-  align: center;
+  display: flex;
+  justify-content: center;
 }
