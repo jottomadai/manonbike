@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<html lang="en-US">
+<title>MOB.H</title>
+
 <html>
 <head>
   <link rel="stylesheet" href="styles.css">
@@ -6,19 +9,24 @@
 <body>
     <div>
     
-        <img src="manonbike_horse.png" alt="Man On Bike Dot Horse" usemap="#manmap" width="440" height="409">
+        <img src="manonbike_horse.png" alt="Man On Bike Dot Horse" usemap="#manmap" width="440" height="409" title="You are now using your precious moments on this earth to hover over the image of a man on a bike. This man is saying something, but I won't spoil it here.">
 
         <map name="manmap">
-            <area shape="rect" coords="112, 122, 116, 136" alt="left_eye" href="https://jellyfin.manonbike.horse/" ">
-            <area shape="circle" coords="95, 322, 19" alt="left_hub" href="https://en.wikipedia.org/wiki/Color">
-            <!-- <area shape="circle" coords="327, 310, 19" alt="right_hub" href="https://en.wikipedia.org/wiki/Colour"> -->
-            <area shape="circle" coords="232, 85, 5" alt="dot_horse_rectangle" href="index.html"  onclick="funClickFunction()">
+            <area shape="rect" coords="112, 122, 116, 136" alt="left_eye" href="https://jellyfin.manonbike.horse/">
+            <area shape="circle" coords="95, 322, 19" alt="left_hub" href="https://en.wikipedia.org/wiki/Color" title="wiki">
+            <area shape="circle" coords="327, 310, 19" alt="right_hub" href="#" onclick="lightMode()" title="light/dark">
+            <area shape="circle" coords="232, 85, 5" alt="dot_horse_rectangle" href="#"  onclick="funClickFunction()" title="Zzzzzzzz Zzzzzzzzzz">
 
         </map>
     </div>
 <script>
 function funClickFunction() {
   alert("'Please don't click the dot, it's trying to sleep'");
+}
+
+function lightMode() {
+  var element = document.body;
+  element.classList.toggle("light-mode");
 }
 </script>
     
